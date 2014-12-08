@@ -17,6 +17,9 @@ You should create one R script called run_analysis.R that does the following.
   4. Appropriately labels the data set with descriptive variable names. 
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+###Script run_analysis.R
+####
+
 ###Steps to reproduct results
 
   1. Set the working directory to the main folder where the souce file been unzipped.
@@ -24,5 +27,5 @@ You should create one R script called run_analysis.R that does the following.
   3. In RStudio, execute the r program by typing : source("run_analysis.R")
 
 ###Script output
-
-  1. 
+  1. tidy clean data (tab delimited output)
+  2. 2nd tidy data with the average of each variable for each activity and each subject
