@@ -22,3 +22,7 @@ You should create one R script called run_analysis.R that does the following.
   1. Set the working directory to the main folder where the souce file been unzipped.
   2. Put the run_analysis.R to the working directory
   3. In RStudio, execute the r program by typing : source("run_analysis.R")
+
+###Script output
+
+  1. 
