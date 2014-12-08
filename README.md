@@ -18,21 +18,21 @@ You should create one R script called run_analysis.R that does the following.
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ###Script run_analysis.R
-####Read data in traing & test subfolder
-
-train_data <- read.table("./train/X_train.txt")
-train_label <- read.table("./train/y_train.txt")
-train_subject <- read.table("./train/subject_train.txt")
-
-test_data <- read.table("./test/X_test.txt")
-test_label <- read.table("./test/y_test.txt")
-test_subject <- read.table("./test/subject_test.txt")
-
-####Merge the train & test datasets together
-myData <- rbind(train_data, test_data)
-mylabel <- rbind(train_label, test_label)
-mysubject <- rbind(train_subject, test_subject)
-
+    ####Read data in traing & test subfolder
+    
+    train_data <- read.table("./train/X_train.txt")
+    train_label <- read.table("./train/y_train.txt")
+    train_subject <- read.table("./train/subject_train.txt")
+    
+    test_data <- read.table("./test/X_test.txt")
+    test_label <- read.table("./test/y_test.txt")
+    test_subject <- read.table("./test/subject_test.txt")
+    
+    ####Merge the train & test datasets together
+    myData <- rbind(train_data, test_data)
+    mylabel <- rbind(train_label, test_label)
+    mysubject <- rbind(train_subject, test_subject)
+    
 
 
 ###Steps to reproduct results
