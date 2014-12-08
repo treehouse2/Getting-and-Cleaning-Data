@@ -34,7 +34,7 @@ names(mylabel) <- "activity"
 
 names(mysubject) <- "subject"
 cleaned <- cbind(mysubject, mylabel, myData)
-write.table(cleaned, "merged_clean_data.txt")
+write.table(cleaned, "merged_clean_data.txt", sep="\t")
 
 ## 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
@@ -58,4 +58,4 @@ for(i in 1:subjectLen) {
 }
 
 head(result)
-write.table(result, "clean_data_with_means.txt")
+write.table(result, "clean_data_with_means.txt", sep="\t")
