@@ -1,36 +1,36 @@
 ## 1.Merges the training and the test sets to create one data set.
 
-setwd("~/Data Science/UCI HAR Dataset")
-
+### read data in train folder
 train_data <- read.table("./train/X_train.txt")
 train_label <- read.table("./train/y_train.txt")
 train_subject <- read.table("./train/subject_train.txt")
 
+### read data in test folder
 test_data <- read.table("./test/X_test.txt")
 test_label <- read.table("./test/y_test.txt")
 test_subject <- read.table("./test/subject_test.txt")
 
+### merge both datasets
 myData <- rbind(train_data, test_data)
 mylabel <- rbind(train_label, test_label)
 mysubject <- rbind(train_subject, test_subject)
 
-
 ## 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
 
+### read features and grep descriptions contain mean or std
 features <- read.table("features.txt")
 mean_std_indexes <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
 myData <- myData[,mean_std_indexes]
-
-## 3.Uses descriptive activity names to name the activities in the data set
-
 names(myData) <- gsub("\\(\\)", "", features[mean_std_indexes, 2])
 
-## 4.Appropriately labels the data set with descriptive variable names. 
+## 3.Uses descriptive activity names to name the activities in the data set
 
 activity <- read.table("activity_labels.txt")
 activity[, 2] <- tolower(gsub("_", "", activity[, 2]))
 mylabel[, 1] <- activity[mylabel[, 1], 2]
 names(mylabel) <- "activity"
+
+## 4.Appropriately labels the data set with descriptive variable names. 
 
 names(mysubject) <- "subject"
 cleaned <- cbind(mysubject, mylabel, myData)
