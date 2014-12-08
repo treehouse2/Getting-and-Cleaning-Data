@@ -57,5 +57,4 @@ for(i in 1:subjectLen) {
   }
 }
 
-head(result)
 write.table(result, "clean_data_with_means.txt", sep="\t")
