@@ -8,8 +8,7 @@ Here are the data for the project</td><td>
 The data cleaning process are performed based on the following steps</td><td>
   1.	Once the data is downloaded to your machine, please set the directory as the working directory.
   2.	Read data files and merge into 3 data sets (each has 10299 observtions)
-  
-      a.	myData
+      <\t>a.	myData
       b.	myLabel
       c.	mySubject
   3.	Extract mean and std variables – by grep subset of measures with label contains “mean” or “std”.
