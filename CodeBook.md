@@ -16,7 +16,8 @@ The data cleaning process are performed based on the following steps:
   5.	Sort through the subject and avtivity and calculate the average by taking the colmean for each measure.
 
 ###3. Code Book
-#### Result variables – 2 key factors (Subject, Activity) and 66 Measurment Variables
+
+#### 3.1 Result variables – 2 key factors (Subject, Activity) and 66 Measurment Variables
   
   Subject	: Identifier for the 30 volunteers – range from 1 to 30
  
