@@ -14,7 +14,7 @@ The data cleaning process are performed based on the following steps:
   3.	Extract mean and std variables – by grep subset of measures with label contains “mean” or “std”.
   4.	Give the data set with descriptive heading by assign the subject, activity and the features to the data set and remove the _, 
   5.	Sort through the subject and avtivity and calculate the average by taking the colmean for each measure.
-  6.	
+
 ###3. Code Book
 #### Result variables – 2 key factors (Subject, Activity) and 66 Variables
   Subject	: Identifier for the 30 volunteers – range from 1 to 30
