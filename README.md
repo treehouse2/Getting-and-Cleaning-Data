@@ -19,7 +19,7 @@ You should create one R script called run_analysis.R that does the following.
 
 ###Script run_analysis.R
 
-####Read data in traing & test subfolder
+####Read data in train & test subfolder
     train_data <- read.table("./train/X_train.txt")
     train_label <- read.table("./train/y_train.txt")
     train_subject <- read.table("./train/subject_train.txt")
