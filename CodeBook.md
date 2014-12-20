@@ -3,16 +3,16 @@
   The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 ###2. Study Design
   The data for the project is collected from the accelerometers from the Samsung Galaxy S smartphone.  The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. More detail can be obtained at the study web site.
-Here are the data for the project</td><td> 
-  https</td><td>//d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-The data cleaning process are performed based on the following steps</td><td>
+Here are the data for the project: 
+  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+The data cleaning process are performed based on the following steps:
 
   1.	Once the data is downloaded to your machine, please set the directory as the working directory.
   2.	Read data files and merge into 3 data sets (each has 10299 observtions)
   
-      a.	myData
-      b.	myLabel
-      c.	mySubject
+      <tr>a.	myData</tr>
+      <tr>b.	myLabel</tr>
+      <tr>c.	mySubject</tr>
 
   3.	Extract mean and std variables – by grep subset of measures with label contains “mean” or “std”.
   4.	Give the data set with descriptive heading by assign the subject, activity and the features to the data set and remove the _, 
