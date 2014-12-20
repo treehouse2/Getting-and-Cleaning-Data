@@ -6,11 +6,14 @@
 Here are the data for the project</td><td> 
   https</td><td>//d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 The data cleaning process are performed based on the following steps</td><td>
+
   1.	Once the data is downloaded to your machine, please set the directory as the working directory.
   2.	Read data files and merge into 3 data sets (each has 10299 observtions)
-      <\t>a.	myData
+  
+      a.	myData
       b.	myLabel
       c.	mySubject
+
   3.	Extract mean and std variables – by grep subset of measures with label contains “mean” or “std”.
   4.	Give the data set with descriptive heading by assign the subject, activity and the features to the data set and remove the _, 
   5.	Sort through the subject and avtivity and calculate the average by taking the colmean for each measure.
