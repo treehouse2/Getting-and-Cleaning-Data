@@ -6,18 +6,18 @@
 Here are the data for the project: 
   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 The data cleaning process are performed based on the following steps:
-1.	Once the data is downloaded to your machine, please set the directory as the working directory.
-2.	Read data files and merge into 3 data sets (each has 10299 observtions)
-a.	myData
-b.	myLabel
-c.	mySubject
-3.	Extract mean and std variables – by grep subset of measures with label contains “mean” or “std”.
-4.	Give the data set with descriptive heading by assign the subject, activity and the features to the data set and remove the _, 
-5.	Sort through the subject and avtivity and calculate the average by taking the colmean for each measure.
+  1.	Once the data is downloaded to your machine, please set the directory as the working directory.
+  2.	Read data files and merge into 3 data sets (each has 10299 observtions)
+  a.	myData
+  b.	myLabel
+  c.	mySubject
+  3.	Extract mean and std variables – by grep subset of measures with label contains “mean” or “std”.
+  4.	Give the data set with descriptive heading by assign the subject, activity and the features to the data set and remove the _, 
+  5.	Sort through the subject and avtivity and calculate the average by taking the colmean for each measure.
 ###3. Code Book
 #### Result variables – 2 key factors (Subject, Activity) and 66 Variables
-Subject	Identifier for the 30 volunteers – range from 1 to 30
-Activity	Activity the subject performed - WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+Subject	: Identifier for the 30 volunteers – range from 1 to 30
+Activity	: Activity the subject performed - WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
